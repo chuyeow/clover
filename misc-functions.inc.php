@@ -37,12 +37,4 @@ function get_post_count() {
         $request = "SELECT COUNT(*) FROM $tableposts WHERE post_status = 'publish'";
         echo $wpdb->get_var($request);
 }
-
-// Returns total number of comments.
-//function get_comment_count($all_posts = true) {
-//    global $wpdb, $tablecomments, $id;
-//        $request = "SELECT COUNT(*) FROM $tablecomments WHERE comment_approved = '1'";
-//        if (!$all_posts) { $request .= " WHERE comment_post_ID=$id"; }
-//    echo $wpdb->get_var($request);
-//}
 ?>

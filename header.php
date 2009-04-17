@@ -10,11 +10,7 @@ include('misc-functions.inc.php');
   <title><?php wp_title(' '); ?> <?php if(wp_title(' ', false)) {echo '-'; } ?> <?php bloginfo('name'); ?></title>
 
   <meta http-equiv="Content-Language" content="en-us" />
-  <meta name="author" content="Cheah Chu Yeow" />
-  <meta name="Copyright" content="Copyright (c) 2003-<?php echo date('Y'); ?> Cheah Chu Yeow" />
   <meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />
-  <meta name="description" content="Web development, Rails, Firefox, Mozilla, Open Source, CSS, programming. redemption in a blog brings you the latest and neatest tidbits in web development, Mozilla and anything techie." />
-  <meta name="keywords" content="web development, Rails, Firefox, Mozilla, Open Source, CSS, programming" />
 
   <style type="text/css" media="screen">
     @import url( <?php bloginfo('stylesheet_url'); ?> );
