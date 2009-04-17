@@ -1,0 +1,734 @@
+/*
+Theme Name: Clover
+Theme URI: http://blog.codefront.net/
+Description: A greenish theme, incidentally with a clover, that was the main look and feel of redemption in a blog (http://blog.codefront.net/) for quite awhile.
+Version: 1.0
+Author: Cheah Chu Yeow
+Author URI: http://blog.codefront.net/
+*/
+
+body {
+behavior:url(/htc/csshover.htc); /* emulate hover effects in IE */
+font-family:verdana,arial,sans-serif;
+margin:0px auto;
+text-align:center;
+}
+
+p {
+margin:1em;
+line-height:160%;
+}
+
+li {
+line-height:160%;
+}
+
+h1, h2, h3, h4 {
+margin:0;
+padding:0;
+}
+
+h3 {
+border-bottom:1px solid;
+font-size:130%;
+margin:10px 0;
+}
+
+h4 {
+border-bottom:1px solid;
+font-size:115%;
+font-weight:bold;
+margin: 0;
+}
+
+a, a:link {
+border-bottom:1px solid;
+text-decoration:none;
+}
+a:visited{
+border-bottom:1px solid;
+}
+a:hover{
+border-bottom:1px solid;
+}
+
+ul {
+list-style-type:disc;
+list-style-image:url(http://blog.codefront.net/images/bullet.gif);
+margin:0.5em;
+padding-left:1em;
+}
+
+ul li {
+margin:0.5em 0;
+}
+
+dt {
+font-weight:bold;
+}
+
+blockquote {
+border-left:4px solid;
+border-bottom:1px solid;
+line-height:160%;
+margin:15px;
+padding:10px;
+-moz-border-radius-topright:15px;
+}
+
+pre {
+border-top:2px solid;
+border-bottom:2px solid;
+font-size:12px;
+line-height:130%;
+overflow:auto;
+margin:10px;
+padding:0 10px;
+width:90%;
+}
+
+.code, code {
+font-family: Monaco,"Courier New",monospace;
+font-size:12px;
+line-height:130%;
+margin:0;
+padding:0;
+width:90%;
+}
+
+acronym {
+border-bottom:1px dotted;
+cursor:help;
+}
+
+ins {
+text-decoration:none;
+}
+
+img {
+border:none;
+}
+
+
+/* Wrap-around container */
+div#container {
+position:relative;
+margin:10px auto;
+padding:0;
+border:5px solid;
+text-align:left;
+width:860px;
+voice-family:"\"}\"";
+voice-family:inherit;
+width:850px;
+}
+
+/* Page header */
+div#header {
+border-bottom:5px solid;
+font-family:verdana,arial,sans-serif;
+font-size:100%;
+letter-spacing:.1em;
+margin:0;
+padding:12px 12px 0 135px;
+height:90px;
+height:expression(this.scrollHeight > 90? "90px" :"auto" );
+}
+div#header a,
+div#header a:link,
+div#header a:visited,
+div#header a:active,
+div#header a:hover {
+border:0px;
+font-weight:normal;
+letter-spacing:.1em;
+text-decoration:none;
+}
+.description {
+font-size:14px;
+letter-spacing:.1em;
+margin:0;
+}
+
+/* Primary navigation menu */
+div#nav {
+border-bottom:5px solid;
+font-size:13px;
+margin:0;
+padding:8px 0 22px 10px;
+}
+div#nav ul {
+margin:0;
+padding:0;
+list-style-type:none;
+}
+div#nav li {
+display:inline;
+margin:0;
+padding:0;
+}
+div#nav a:link, #nav a:visited {
+float:left;
+border:0;
+font-family:verdana,arial,serif;
+font-weight:bold;
+line-height:14px;
+padding:0 12px 8px 12px;
+text-decoration:none;
+}
+div#nav a:hover {
+}
+div#nav a:link.active, #nav a:visited.active {
+}
+
+/* Primary content */
+div#content {
+margin:0 0 0 250px;
+padding:10px;
+border-left:1px solid;
+font-size:13px;
+width:600px;
+voice-family:"\"}\"";
+voice-family:inherit;
+width:580px;
+min-height:4150px;
+height:expression(this.scrollHeight < 4150? "4150px" :"auto" );
+}
+
+/* Menu sidebar */
+div#menu {
+position:absolute;
+top:142px;
+left:0px;
+margin:0;
+padding:10px;
+width:250px;
+voice-family:"\"}\"";
+voice-family:inherit;
+width:230px;
+}
+html>body #right {
+width:210px;
+}
+/* be nice to Opera */
+html>div#menu {
+width:200px;
+}
+
+/* Relative links menu */
+.relMenu {
+border:1px solid;
+font-size:12px;
+text-align:center;
+margin:10px 0 20px 0;
+padding:10px;
+}
+
+/* Footer */
+div#footer {
+clear:both;
+border-top:1px solid;
+font-size:11px;
+margin:0;
+padding:5px 10px;
+}
+
+
+/* Blog entry selectors */
+.entry {
+margin:0 10px;
+padding:10px 20px;
+}
+div.entry+div.entry {
+margin-top:5px;
+}
+.entryDate {
+font-size:11px;
+margin:0;
+padding:0 10px;
+}
+.entryDate:before {
+content:"- ";
+}
+.entryTitle {
+border:0;
+margin:0;
+}
+.entryTitle a, .entryTitle a:link {
+text-decoration:none;
+font-weight:normal;
+border:0;
+}
+.entryFooter {
+border-bottom:1px solid;
+font-size:10px;
+margin:20px 0 8px 0;
+padding:0 8px 20px 0;
+}
+
+.keywords {
+padding:0;
+}
+
+.recentEntries {
+margin:0 10px;
+}
+.recentEntries ul {
+margin:15px 0 0 15px;
+}
+
+.relatedEntries {
+font-size:12px;
+margin:8px;
+padding:5px 30px;
+}
+
+
+/* Comments */
+.comment {
+border:1px solid;
+font-size:12px;
+line-height:150%;
+margin:10px 10px 0px 20px;
+padding:1em;
+}
+.comment:hover {
+border:1px solid;
+}
+.commentFooter {
+font-size:11px;
+}
+.commentIcon {
+float:left;
+background:transparent;
+border:0px none;
+display:inline;
+margin:0;
+margin-top:10px;
+text-align:left;
+}
+.commentForm {
+margin:0;
+padding:10px;
+}
+.commentForm p {
+clear: both;
+}
+
+/* TrackBacks */
+.trackback {
+border:1px solid;
+font-size:12px;
+line-height:150%;
+margin:10px 10px 0px 20px;
+padding:1em;
+}
+.trackback:hover {
+border:1px solid;
+}
+.trackbackFooter {
+font-size:11px;
+}
+.trackbackIcon {
+float:left;
+border:0px none;
+display:inline;
+margin:0;
+margin-top:15px;
+text-align:left;
+}
+
+/* Referrers listing */
+.referrers {
+font-size:12px;
+padding:10px;
+}
+
+/* Menu selectors */
+.menuSection {
+margin:0 0 15px 0;
+padding:0 10px;
+}
+.menuTitle {
+border-bottom:1px solid;
+font-family:verdana,serif;
+font-size:13px;
+font-weight:bold;
+letter-spacing:.2em;
+margin-bottom:5px;
+}
+.menuItem {
+font-size:12px;
+line-height:170%;
+padding:5px 2px;
+}
+
+/* Externals */
+.externals {
+border:1px solid;
+margin:10px;
+padding:20px;
+}
+
+.linkTitle {
+font-size:12px;
+}
+
+/* Blog buttons */
+.buttons {
+padding:5px;
+}
+img.button {
+display:block;
+margin:2px;
+}
+
+/* Illustrative images */
+#content div.img {
+float:left;
+background:url(http://blog.codefront.net/images/shadow.png) bottom right no-repeat !important;
+background:url(http://blog.codefront.net/images/shadow.gif) bottom right no-repeat;
+margin:5px 8px 5px 15px;
+padding:0;
+position:relative;
+}
+#content div.img img {
+display:block;
+position:relative;
+border:1px solid;
+margin:-6px 6px 6px -6px;
+padding:4px;
+vertical-align:bottom;
+}
+/* Decorative images, floated right */
+#content div.imgDecRight img {
+background:url(http://blog.codefront.net/images/shadow.gif) bottom right no-repeat;
+clear:right;
+float:right;
+margin:0 0 15px 25px;
+padding:0;
+position:relative;
+}
+#content div.imgDecRight img {
+border:1px solid;
+display:block;
+margin:-5px 5px 5px -5px;
+padding:4px;
+position:relative;
+}
+
+/* Pullquotes */
+div.pullquote {
+float:right;
+margin:10px;
+margin-left:15px;
+margin-right:0;
+font-size:18px;
+line-height:120%;
+text-align:center;
+width:150px;
+}
+div.pullquoteLeft {
+float:left;
+margin:10px;
+margin-left:0;
+margin-right:15px;
+font-size:18px;
+line-height:120%;
+text-align:center;
+width:150px;
+}
+
+/* Gravatars */
+.gravatar {
+float:right;
+background:#fcfcfc;
+border:1px solid #ccc;
+padding:2px;
+margin:-18px -18px 4px 4px;
+}
+
+/* Tooltips */
+span.tooltipped {
+position:relative;
+border-bottom:1px dashed;
+cursor:help;
+}
+span.tooltipped:hover {
+border-bottom:1px solid;
+}
+span.tooltipped span.tooltip {
+display:none;
+}
+span.tooltipped:hover span.tooltip {
+display:block;
+position:absolute;
+padding:5px;
+top:2em;left:2em;
+width:15em;
+border:1px solid;
+font-size:90%;
+line-height:130%;
+}
+
+
+/* Form elements */
+form {
+margin:0;
+padding:0;
+}
+fieldset {
+border:0;
+}
+label {
+cursor:pointer;
+}
+input,textarea  {
+border:1px solid;
+font-family:verdana,sans-serif;
+font-size:12px;
+padding:2px;
+}
+input[type="submit"]:hover {
+}
+input:hover,textarea:hover {
+border:1px solid;
+}
+input:focus,textarea:focus {
+border:1px solid;
+}
+select,option {
+border:0px;
+font-size:10px;
+}
+
+.archiveSection {
+margin:10px;
+padding:5px 10px;
+}
+.archiveSection li {
+padding:2px;
+}
+
+#contactForm {
+border-top:1px dotted;
+border-bottom:1px dotted;
+padding:5px 15px;
+}
+
+#highlight {
+border-left:3px solid;
+border-right:3px solid;
+padding:0 8px;
+}
+
+.superscript {
+vertical-align:super;
+}
+
+.monospaced {
+font-family:monospace;
+font-size:13px;
+}
+
+
+/* Blogads */
+.adstrip {
+font-size:14pt;
+border-width:thin;
+border-color:#e9e9e9;
+background:#f3f7f0;
+border-style:solid;
+width:200px;
+border-spacing:0px;
+padding:0 10px;
+}
+.adstrip_link {
+font-style:italic;
+font-family:Times;
+margin-left:0pt;
+margin-top:0pt;
+font-size:10pt;
+margin-bottom:0pt;
+text-decoration:underline;
+color:#b30;
+font-weight:normal;
+margin-right:0pt;
+text-align:center;
+}
+.adstrip_title {
+font-weight:bold;
+font-style:normal;
+text-decoration:none;
+text-align:center;
+color:#779b00;
+font-size:14pt;
+}
+a.adstrip_link:link {
+font-color:#b30;
+font-style:normal;
+text-decoration:underline;
+font-size:10pt;
+color:#b30;
+}
+a.adstrip_link:visited {
+text-decoration:underline;
+font-style:normal;
+font-size:10pt;
+color:#b30;
+}
+a.adstrip_link:active {
+text-decoration:none;
+color:#f00;
+}
+a.adstrip_link:hover {
+text-decoration:none;
+color:#f00;
+}
+.blogad {
+text-align:left;
+border-width:thin;
+border-spacing:0px;
+border-color:#d6d6d6;
+background:#ffffff;
+border-style:solid;
+width:100%;
+cursor:pointer;
+padding:5px 10px;
+}
+.blogad_headline {
+text-align:center;
+margin-right:0pt;
+border-spacing:0px;
+color:#222;
+margin-left:0pt;
+font-weight:bold;
+margin-bottom:0pt;
+margin-top:8px;
+font-size:12pt;
+}
+.blogad_thumbnail {
+text-align:left;
+border:none;
+border-spacing:0px;
+}
+.blogad_text {
+margin-bottom:0pt;
+margin-right:0pt;
+color:#333;
+margin-left:0pt;
+border-spacing:0px;
+margin-top:0pt;
+font-size:8pt;
+}
+.blogad_link {
+font-style:normal;
+font-family:Times;
+margin-right:0pt;
+margin-left:0pt;
+margin-bottom:0pt;
+text-decoration:underline;
+color:#b30;visibility:visible;
+margin-top:0pt;
+font-weight:normal;
+font-size:10pt;
+}
+a.blogad_link:link {
+font-color:#b30;
+font-style:normal;
+text-decoration:underline;
+font-size:10pt;
+color:#b30;
+}
+a.blogad_link:visited {
+text-decoration:underline;
+font-style:normal;
+font-size:10pt;
+color:#b30;
+}
+a.blogad_link:active {
+text-decoration:underline;
+color:#f00;
+}
+a.blogad_link:hover {
+text-decoration:underline;
+color:#f00;}
+
+/* == Code Highlighting == */
+
+/** RUBY / JAVASCRIPT **/
+#content code span.comment {
+color: #BD48B3;
+border: 0;
+margin: 0; padding: 0;
+}
+
+#content code span.string {
+color: #6b0;
+}
+
+#content code span.brackets {
+
+}
+
+#content code span.symbol {
+color: #399;
+}
+
+#content code span.keywords {
+color: #FF8400;
+}
+
+#content code span.erb {
+background: #333;
+}
+
+#content code span.symbol {
+      color: #078FDC;
+}
+
+/** HTML **/
+code.html span.tag {
+	color: #fff;
+}
+
+code.html span.attribute {
+	color: #FFD500;
+}
+
+code.html span.string {
+	color: #99FF00;
+}
+
+code.html span.comment {
+	color: #999;
+}
+
+code.html span.doctype {
+	color: #D7FF80;
+}
+
+
+.feedburnerFlareBlock {
+font-size: 80%;
+}
+
+.ad {
+padding: 0 3em;
+color: #666;
+font-size: 11px;
+}
+
+div#user_details {
+float: left;
+}
+
+// Facebook Connect widget.
+#fbc_login {
+}
+.fbc_connect_button_area {
+margin-top: 18px;
+}
+#fbc_login a {
+border: 0;
+}
